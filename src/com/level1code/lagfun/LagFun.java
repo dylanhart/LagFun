@@ -7,11 +7,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class LagFun extends JavaPlugin implements Listener {
 	public void onEnable() {
-        getServer().getPluginManager().registerEvents(this, this);
-    }
+		getServer().getPluginManager().registerEvents(this, this);
+	}
  
-    @EventHandler
-    public void chat(AsyncPlayerChatEvent event) {
-    	event.setMessage(event.getMessage().replaceAll("\\b[Ll]+[Aa]+[Gg]+", "fun"));
-    }
+	@EventHandler
+	public void chat(AsyncPlayerChatEvent event) {
+		event.setMessage(event.getMessage().replaceAll("\\b[Ll]+[Aa]+[Gg]+", "fun"));
+	}
 }
