@@ -28,6 +28,6 @@ public class LagFun extends JavaPlugin implements Listener {
 	
 	@EventHandler
 	public void chat(AsyncPlayerChatEvent event) {
-		event.setMessage(event.getMessage().replaceAll(regex, "fun"));
+		event.setMessage(event.getMessage().replaceAll(regex, "Adoro esse Server! :D"));
 	}
 }
